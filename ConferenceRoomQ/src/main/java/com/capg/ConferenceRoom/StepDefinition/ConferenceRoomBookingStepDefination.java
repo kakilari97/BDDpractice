@@ -25,7 +25,8 @@ public class ConferenceRoomBookingStepDefination {
 	@Given("^User is on Conference room booking page$")
 	public void user_is_on_Conference_room_booking_page() throws Throwable {
 		driver = new ChromeDriver();
-		driver.get("http://localhost:8081/ConferenceRoomW/ConferenceRegistartion.html");
+		//driver.get("http://localhost:8081/ConferenceRoomW/ConferenceRegistartion.html");
+		driver.get("file:///D:/Kavya_BDDExercises/ConferenceRoomQ/ConferenceRegistartion.html");
 		driver.manage().window().maximize();
 		pageBean= new ConfernaceRoomBookingPageBean();
 		PageFactory.initElements(driver, pageBean); 
